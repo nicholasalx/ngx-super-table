@@ -8,6 +8,7 @@ const SORT_TITLE = 'Click to change sort order. Shift-click to sort on multiple 
   selector: '[resizer]',
   template: `<div class="notch" [ngClass]="{ explicit: column.width }"></div>`,
   host: {
+    '(click)': 'stopClick($event)',
     '(mousedown)': 'grab($event)',
     '[attr.title]': '"Click-and-drag to resize. Click to clear specified width."'
   },
@@ -35,13 +36,14 @@ class Resizer {
   @Input() column: ColumnState;
   @Input() actualWidth: number;
 
-  private static MAX_CLICK_WAIT : number = 250;
+  private static MAX_CLICK_WAIT : number = 200;
   private static MIN_COLUMN_WIDTH : number = 30;
 
   constructor (private el: ElementRef) {}
 
   private grab (grabEvt: MouseEvent) : void {
     grabEvt.preventDefault();
+    grabEvt.stopPropagation();
     let mousedownTime : number = Date.now();
     let initClientX : number = grabEvt.clientX;
     let initWidth : number = this.column.width || this.getActualParentWidth();
@@ -62,6 +64,11 @@ class Resizer {
 
   private getActualParentWidth () : number {
     return this.el.nativeElement.parentElement.offsetWidth;
+  }
+
+  private stopClick (event : MouseEvent) : void {
+    event.preventDefault();
+    event.stopPropagation();
   }
 }
 
@@ -134,4 +141,6 @@ export class TableHeader {
       this.state.toggleSort(this.column, event.shiftKey);
     }
   }
+
+
 }
