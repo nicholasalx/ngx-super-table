@@ -1,0 +1,147 @@
+/* main root element */
+.super-table-wrapper {
+  position: relative;
+}
+
+/* styles for both header- and rows- tables */
+.super-table {
+  table-layout: fixed;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/* the visible table header */
+.mesa-header-table {
+  border-bottom: none;
+}
+.mesa-header-table thead > tr > th {
+  border-width: 1px;
+}
+
+/* the invisible table header; used for correct column widths */
+.mesa-rows-table thead {
+  height: 0;
+}
+.mesa-rows-table > thead > tr > th{
+  border-width: 0;
+  padding: 0 !important;
+}
+.mesa-rows-table-wrapper {
+  overflow: auto;
+}
+.mesa-rows-table > tbody + tbody {
+  border-top: none;
+}
+
+/* general styles for all cells in both tables */
+.super-table th {
+  white-space: nowrap;
+  position: relative;
+}
+.super-table td {
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+/* this type of cell is used to show messages like "loading" */
+.super-table td.space-holder-row-cell {
+  text-align: center;
+}
+
+/* search input */
+.super-table tr.super-table-filter-row td input {
+  width: 100%;
+  border-radius: 2em;
+  border: 1px solid #CCC;
+  outline: none;
+  text-indent: 0.3em;
+  font-size: 90%;
+}
+.super-table tr.super-table-filter-row td {
+  position: relative;
+}
+/* button to clear search */
+.super-table tr.super-table-filter-row td .clear-search-btn {
+  position: absolute;
+  border-radius: 50%;
+  border: none;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  opacity: 0.2;
+  color: white;
+  background-color: black;
+  padding: 0;
+  width: 15px;
+  line-height: 15px;
+}
+
+/* activated search input, as in when there is text in it */
+.super-table tr.super-table-filter-row td input.active {
+  background-color: #3D82C2;
+  color: #FFF;
+  border-color: #747474;
+}
+
+/* placeholder object for when columns are being sorted */
+.super-table .super-table-column-placeholder {
+  background-color: #DDD;
+}
+
+/* handle to grab in order to resize a column */
+.super-table th .column-resizer {
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  border-width: 0 1px;
+  cursor: col-resize;
+  border-color: #DDD;
+  border-style: solid;
+}
+
+/* this class is applied to a .column-resizer
+when a discreet width has been set on it */
+.super-table th .column-resizer.discreet-width {
+  background-color: #DDD;
+}
+
+/* wrapper for text in a th */
+.super-table th .column-text {
+  max-width: 100%;
+  overflow: hidden;
+  display: block;
+}
+
+/* the element showing what the new width will be */
+.super-table th .column-resizer-marquee {
+  left: 0;
+  top: 0;
+  height: 100%;
+  border: 1px dotted #DEDEDE;
+  position: absolute;
+}
+
+/* sorting icons */
+.super-table th span.sorting-icon {
+  font-size: 10px;
+  margin-left: 10px;
+}
+.super-table th span.glyphicon-sort {
+  opacity: 0.2;
+}
+.super-table th.sortable-column {
+  cursor: pointer;
+  user-select: none
+}
+
+/* dummy row */
+.super-table-dummy-row {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAlCAYAAACDKIOpAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiuHv37n+G////MzAxAMHQIQACDAC7twbaN2nkgwAAAABJRU5ErkJggg==');
+  background-repeat: repeat;
+}
+table tbody .super-table-dummy-row td {
+  border-top: none;
+}
