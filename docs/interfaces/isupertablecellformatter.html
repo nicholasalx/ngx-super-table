@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DummyRows | ng2-super-table</title>
+	<title>ISuperTableCellFormatter | ng2-super-table</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="dummyrows.html">DummyRows</a>
+					<a href="isupertablecellformatter.html">ISuperTableCellFormatter</a>
 				</li>
 			</ul>
-			<h1>Class DummyRows</h1>
+			<h1>Interface ISuperTableCellFormatter</h1>
 		</div>
 	</div>
 </header>
@@ -71,57 +71,37 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">DummyRows</span>
+						<span class="target">ISuperTableCellFormatter</span>
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="dummyrows.html#columncount" class="tsd-kind-icon">column<wbr>Count</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="dummyrows.html#rowcount" class="tsd-kind-icon">row<wbr>Count</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="dummyrows.html#rowheight" class="tsd-kind-icon">row<wbr>Height</a></li>
+			<section class="tsd-panel">
+				<h3 class="tsd-before-signature">Callable</h3>
+				<ul class="tsd-signatures tsd-kind-interface">
+					<li class="tsd-signature tsd-kind-icon">__call<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span>, column<span class="tsd-signature-symbol">: </span><a href="columnstate.html" class="tsd-signature-type">ColumnState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/andyperlitch/ng2-super-table/blob/cc12b0e/src/interfaces.ts#L13">src/interfaces.ts:13</a></li>
 							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="columncount" class="tsd-anchor"></a>
-					<h3>column<wbr>Count</h3>
-					<div class="tsd-signature tsd-kind-icon">column<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/andyperlitch/ng2-super-table/blob/cc12b0e/src/dummyRows.component.ts#L29">src/dummyRows.component.ts:29</a></li>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>value: <span class="tsd-signature-type">any</span></h5>
+							</li>
+							<li>
+								<h5>row: <span class="tsd-signature-type">Object</span></h5>
+							</li>
+							<li>
+								<h5>column: <a href="columnstate.html" class="tsd-signature-type">ColumnState</a></h5>
+							</li>
 						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="rowcount" class="tsd-anchor"></a>
-					<h3>row<wbr>Count</h3>
-					<div class="tsd-signature tsd-kind-icon">row<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/andyperlitch/ng2-super-table/blob/cc12b0e/src/dummyRows.component.ts#L28">src/dummyRows.component.ts:28</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="rowheight" class="tsd-anchor"></a>
-					<h3>row<wbr>Height</h3>
-					<div class="tsd-signature tsd-kind-icon">row<wbr>Height<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/andyperlitch/ng2-super-table/blob/cc12b0e/src/dummyRows.component.ts#L27">src/dummyRows.component.ts:27</a></li>
-						</ul>
-					</aside>
-				</section>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+					</li>
+				</ul>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -134,80 +114,69 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class">
+						<a href="../classes/dummyrows.html" class="tsd-kind-icon">Dummy<wbr>Rows</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/enumfilter.html" class="tsd-kind-icon">Enum<wbr>Filter</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="../classes/resizer.html" class="tsd-kind-icon">Resizer</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/supertable.html" class="tsd-kind-icon">Super<wbr>Table</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/supertablebody.html" class="tsd-kind-icon">Super<wbr>Table<wbr>Body</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/supertablecell.html" class="tsd-kind-icon">Super<wbr>Table<wbr>Cell</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/supertablehead.html" class="tsd-kind-icon">Super<wbr>Table<wbr>Head</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/supertablerow.html" class="tsd-kind-icon">Super<wbr>Table<wbr>Row</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/supertablestate.html" class="tsd-kind-icon">Super<wbr>Table<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/tablecell.html" class="tsd-kind-icon">Table<wbr>Cell</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/tableheader.html" class="tsd-kind-icon">Table<wbr>Header</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/textfilter.html" class="tsd-kind-icon">Text<wbr>Filter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="columnstate.html" class="tsd-kind-icon">Column<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-not-exported">
+						<a href="ibuiltinfilters.html" class="tsd-kind-icon">IBuilt<wbr>InFilters</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ibuiltinsorters.html" class="tsd-kind-icon">IBuilt<wbr>InSorters</a>
+					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class">
-						<a href="dummyrows.html" class="tsd-kind-icon">Dummy<wbr>Rows</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="dummyrows.html#columncount" class="tsd-kind-icon">column<wbr>Count</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="dummyrows.html#rowcount" class="tsd-kind-icon">row<wbr>Count</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="dummyrows.html#rowheight" class="tsd-kind-icon">row<wbr>Height</a>
-							</li>
-						</ul>
+					<li class="current tsd-kind-interface">
+						<a href="isupertablecellformatter.html" class="tsd-kind-icon">ISuper<wbr>Table<wbr>Cell<wbr>Formatter</a>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class">
-						<a href="enumfilter.html" class="tsd-kind-icon">Enum<wbr>Filter</a>
-					</li>
-					<li class=" tsd-kind-class tsd-is-not-exported">
-						<a href="resizer.html" class="tsd-kind-icon">Resizer</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="supertable.html" class="tsd-kind-icon">Super<wbr>Table</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="supertablebody.html" class="tsd-kind-icon">Super<wbr>Table<wbr>Body</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="supertablecell.html" class="tsd-kind-icon">Super<wbr>Table<wbr>Cell</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="supertablehead.html" class="tsd-kind-icon">Super<wbr>Table<wbr>Head</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="supertablerow.html" class="tsd-kind-icon">Super<wbr>Table<wbr>Row</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="supertablestate.html" class="tsd-kind-icon">Super<wbr>Table<wbr>State</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="tablecell.html" class="tsd-kind-icon">Table<wbr>Cell</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="tableheader.html" class="tsd-kind-icon">Table<wbr>Header</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="textfilter.html" class="tsd-kind-icon">Text<wbr>Filter</a>
+					<li class=" tsd-kind-interface">
+						<a href="isupertablecolumn.html" class="tsd-kind-icon">ISuper<wbr>Table<wbr>Column</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/columnstate.html" class="tsd-kind-icon">Column<wbr>State</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-is-not-exported">
-						<a href="../interfaces/ibuiltinfilters.html" class="tsd-kind-icon">IBuilt<wbr>InFilters</a>
+						<a href="isupertablefilter.html" class="tsd-kind-icon">ISuper<wbr>Table<wbr>Filter</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/ibuiltinsorters.html" class="tsd-kind-icon">IBuilt<wbr>InSorters</a>
+						<a href="isupertableoptions.html" class="tsd-kind-icon">ISuper<wbr>Table<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/isupertablecellformatter.html" class="tsd-kind-icon">ISuper<wbr>Table<wbr>Cell<wbr>Formatter</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/isupertablecolumn.html" class="tsd-kind-icon">ISuper<wbr>Table<wbr>Column</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/isupertablefilter.html" class="tsd-kind-icon">ISuper<wbr>Table<wbr>Filter</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/isupertableoptions.html" class="tsd-kind-icon">ISuper<wbr>Table<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/isupertablesorter.html" class="tsd-kind-icon">ISuper<wbr>Table<wbr>Sorter</a>
+						<a href="isupertablesorter.html" class="tsd-kind-icon">ISuper<wbr>Table<wbr>Sorter</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="../globals.html#filter_type" class="tsd-kind-icon">FILTER_<wbr>TYPE</a>
