@@ -72,6 +72,22 @@
 					<a href="https://github.com/andyperlitch/ng2-super-table/issues"><img src="https://img.shields.io/github/issues/andyperlitch/ng2-super-table.svg" alt="GitHub issues"></a>
 					<a href="https://github.com/andyperlitch/ng2-super-table/stargazers"><img src="https://img.shields.io/github/stars/andyperlitch/ng2-super-table.svg" alt="GitHub stars"></a>
 				<a href="https://raw.githubusercontent.com/andyperlitch/ng2-super-table/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="GitHub license"></a></p>
+				<p>A table component with the following features:</p>
+				<ul>
+					<li>row virtualization</li>
+					<li>row sorting (stackable)</li>
+					<li>cell formatting (text)</li>
+					<li>custom cell component</li>
+					<li>column resizing</li>
+					<li>column-based filtering<ul>
+							<li>string</li>
+							<li>number</li>
+							<li>enum</li>
+							<li>custom</li>
+						</ul>
+					</li>
+				</ul>
+				<p><img src="http://i.imgur.com/ERUHmza.png" alt="angular2 super table screenshot"></p>
 				<h2 id="demo">Demo</h2>
 				<p><a href="https://andyperlitch.github.io/ng2-super-table/demo/">https://andyperlitch.github.io/ng2-super-table/demo/</a></p>
 				<h2 id="table-of-contents">Table of contents</h2>
@@ -89,16 +105,40 @@
 				<pre><code><span class="hljs-built_in">npm</span> install --save ng2-<span class="hljs-keyword">super</span>-table
 </code></pre><p>Then use it in your app like so:</p>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> {Component} from <span class="hljs-string">'@angular/core'</span>;
-<span class="hljs-keyword">import</span> {HelloWorld} from <span class="hljs-string">'ng2-super-table'</span>;
+<span class="hljs-keyword">import</span> {SuperTable, ISuperTableColumn} from <span class="hljs-string">'ng2-super-table'</span>;
 
 @Component({
   selector: <span class="hljs-string">'demo-app'</span>,
-  directives: [HelloWorld],
-  template: <span class="hljs-string">'&lt;hello-world&gt;&lt;/hello-world&gt;'</span>
+  directives: [SuperTable],
+  template: <span class="hljs-string">`&lt;super-table
+    [rows]="rows"
+    [columns]="columns"
+    [options]="options"&gt;
+  &lt;/super-table&gt;`</span>
 })
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> DemoApp {}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> DemoApp {
+  rows = [
+    { name: <span class="hljs-string">'thing1'</span>, age: <span class="hljs-number">7</span> },
+    { name: <span class="hljs-string">'thing2'</span>, age: <span class="hljs-number">7</span> },
+    { name: <span class="hljs-string">'cat'</span>, age: <span class="hljs-number">10</span> },
+    { name: <span class="hljs-string">'fish'</span>, age: <span class="hljs-number">1</span> },
+  ];
+  columns: ISuperTableColumn[] = [
+    {
+      id: <span class="hljs-string">'name'</span>,
+      key: <span class="hljs-string">'name'</span>
+      label: <span class="hljs-string">'Name'</span>
+    },
+    {
+      id: <span class="hljs-string">'age'</span>,
+      key: <span class="hljs-string">'age'</span>
+      label: <span class="hljs-string">'Age'</span>
+    }
+  ];
+  options = {}
+}
 </code></pre>
-				<p>You may also find it useful to view the <a href="https://github.com/andyperlitch/ng2-super-table/blob/master/demo/demo.ts">demo source</a>.</p>
+				<p>Please view the <a href="https://github.com/andyperlitch/ng2-super-table/blob/master/demo/demo.ts">demo source</a> for a much more feature-complete example.</p>
 				<h3 id="usage-without-a-module-bundler">Usage without a module bundler</h3>
 				<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"node_modules/ng2-super-table/ng2-super-table.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
