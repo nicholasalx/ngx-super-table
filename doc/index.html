@@ -1,0 +1,367 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ngx-super-table</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">ngx-super-table</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1> ngx-super-table</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<h1 id="ngx-super-table">ngx super table</h1>
+				<p><a href="https://travis-ci.org/andyperlitch/ngx-super-table"><img src="https://travis-ci.org/andyperlitch/ngx-super-table.svg?branch=master" alt="Build Status"></a>
+					<a href="http://badge.fury.io/js/ngx-super-table"><img src="https://badge.fury.io/js/ngx-super-table.svg" alt="npm version"></a>
+					<a href="https://david-dm.org/andyperlitch/ngx-super-table#info=devDependencies"><img src="https://david-dm.org/andyperlitch/ngx-super-table/dev-status.svg" alt="devDependency Status"></a>
+					<a href="https://github.com/andyperlitch/ngx-super-table/issues"><img src="https://img.shields.io/github/issues/andyperlitch/ngx-super-table.svg" alt="GitHub issues"></a>
+					<a href="https://github.com/andyperlitch/ngx-super-table/stargazers"><img src="https://img.shields.io/github/stars/andyperlitch/ngx-super-table.svg" alt="GitHub stars"></a>
+				<a href="https://raw.githubusercontent.com/andyperlitch/ngx-super-table/master/MIT-LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="GitHub license"></a></p>
+				<p>A table component built in <a href="https://angular.io">angular</a> with the following features:</p>
+				<ul>
+					<li>row virtualization</li>
+					<li>row sorting (stackable)</li>
+					<li>cell formatting (text)</li>
+					<li>custom cell component</li>
+					<li>column resizing</li>
+					<li>column-based filtering<ul>
+							<li>string</li>
+							<li>number</li>
+							<li>enum</li>
+							<li>custom</li>
+						</ul>
+					</li>
+				</ul>
+				<p><img src="http://i.imgur.com/ERUHmza.png" alt="ngx super table screenshot"></p>
+				<blockquote>
+					<p><strong>Note:</strong> This project was formerly named <code>ng2-super-table</code>.</p>
+				</blockquote>
+				<h2 id="demo">Demo</h2>
+				<p><a href="https://andyperlitch.github.io/ngx-super-table/demo/">https://andyperlitch.github.io/ngx-super-table/demo/</a></p>
+				<h2 id="table-of-contents">Table of contents</h2>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#installation">Installation</a></li>
+					<li><a href="#documentation">Documentation</a></li>
+					<li><a href="#development">Development</a></li>
+					<li><a href="#license">License</a></li>
+				</ul>
+				<h2 id="about">About</h2>
+				<p>A table component for Angular projects</p>
+				<h2 id="installation">Installation</h2>
+				<p>Install through npm:</p>
+				<pre><code><span class="hljs-built_in">npm</span> install --save ngx-<span class="hljs-keyword">super</span>-table
+</code></pre><p>Then use it in your app like so:</p>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
+<span class="hljs-keyword">import</span> { SuperTable, ISuperTableColumn } <span class="hljs-keyword">from</span> <span class="hljs-string">'ngx-super-table'</span>;
+
+<span class="hljs-meta">@Component</span>({
+  selector: <span class="hljs-string">'demo-app'</span>,
+  directives: [SuperTable],
+  template: <span class="hljs-string">`&lt;super-table
+    [rows]="rows"
+    [columns]="columns"
+    [options]="options"&gt;
+  &lt;/super-table&gt;`</span>
+})
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> DemoApp {
+  rows = [
+    { name: <span class="hljs-string">'thing1'</span>, age: <span class="hljs-number">7</span> },
+    { name: <span class="hljs-string">'thingx'</span>, age: <span class="hljs-number">7</span> },
+    { name: <span class="hljs-string">'cat'</span>, age: <span class="hljs-number">10</span> },
+    { name: <span class="hljs-string">'fish'</span>, age: <span class="hljs-number">1</span> },
+  ];
+  columns: ISuperTableColumn[] = [
+    {
+      id: <span class="hljs-string">'name'</span>,
+      key: <span class="hljs-string">'name'</span>
+      label: <span class="hljs-string">'Name'</span>
+    },
+    {
+      id: <span class="hljs-string">'age'</span>,
+      key: <span class="hljs-string">'age'</span>
+      label: <span class="hljs-string">'Age'</span>
+    }
+  ];
+  options = {}
+}
+</code></pre>
+				<p>Please view the <a href="https://github.com/andyperlitch/ngx-super-table/blob/master/src/app/demo.component.ts">demo source</a> for a much more feature-complete example.</p>
+				<h3 id="usage-without-a-module-bundler">Usage without a module bundler</h3>
+				<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"node_modules/ngx-super-table/index.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+    <span class="hljs-comment">// everything is exported ngxSuperTable namespace</span>
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre><h2 id="documentation">Documentation</h2>
+				<p>All documentation is auto-generated from the source via typedoc and can be viewed here:</p>
+				<p><a href="https://andyperlitch.github.io/ngx-super-table/docs/">https://andyperlitch.github.io/ngx-super-table/docs/</a></p>
+				<h2 id="development">Development</h2>
+				<p>This project was generated with <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 1.0.0-rc.2.</p>
+				<h3 id="prepare-your-environment">Prepare your environment</h3>
+				<ul>
+					<li>Install <a href="http://nodejs.org/">Node.js</a> and NPM (should come with)</li>
+					<li>Install local dev dependencies: <code>npm install</code> while current directory is this repo</li>
+				</ul>
+				<h3 id="development-server">Development server</h3>
+				<p>Run <code>ng serve</code> for a dev server. Navigate to <code>http://localhost:4200/</code>. The app will automatically reload if you change any of the source files.</p>
+				<h3 id="code-scaffolding">Code scaffolding</h3>
+				<p>Run <code>ng generate component component-name</code> to generate a new component. You can also use <code>ng generate directive/pipe/service/class/module</code>.</p>
+				<h2 id="build">Build</h2>
+				<p>Run <code>ng build</code> to build the project. The build artifacts will be stored in the <code>dist/</code> directory. Use the <code>-prod</code> flag for a production build.</p>
+				<h3 id="running-unit-tests">Running unit tests</h3>
+				<p>Run <code>ng test</code> to execute the unit tests via <a href="https://karma-runner.github.io">Karma</a>.</p>
+				<h3 id="running-end-to-end-tests">Running end-to-end tests</h3>
+				<p>Run <code>ng e2e</code> to execute the end-to-end tests via <a href="http://www.protractortest.org/">Protractor</a>.
+				Before running the tests make sure you are serving the app via <code>ng serve</code>.</p>
+				<h3 id="further-help">Further help</h3>
+				<p>To get more help on the Angular CLI use <code>ng help</code> or go check out the <a href="https://github.com/angular/angular-cli/blob/master/README.md">Angular CLI README</a>.</p>
+				<h2 id="release">Release</h2>
+				<ul>
+					<li>Bump the version in <code>src/lib/package.json</code> (once the module hits 1.0 this will become automatic)</li>
+				</ul>
+				<pre><code class="lang-bash">npm run release
+</code></pre>
+				<h2 id="todo">TODO</h2>
+				<ul>
+					<li>[X] row virtualization</li>
+					<li>[X] column resizing</li>
+					<li>[X] row sorting (stacked, via columns)</li>
+					<li>[X] cell formatting (text)</li>
+					<li>[X] custom cell component</li>
+					<li>[X] column-based filtering<ul>
+							<li>[X] string</li>
+							<li>[X] number</li>
+							<li>[X] enum</li>
+							<li>[X] custom</li>
+							<li>[ ] formatted string</li>
+						</ul>
+					</li>
+					<li>[ ] hiding/showing columns</li>
+				</ul>
+				<h2 id="license">License</h2>
+				<p>MIT</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_e2e_app_e2e_spec_.html">"e2e/app.e2e-<wbr>spec"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_e2e_app_po_.html">"e2e/app.po"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_app_app_component_.html">"src/app/app.component"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_app_app_component_spec_.html">"src/app/app.component.spec"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_app_app_module_.html">"src/app/app.module"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_app_demo_component_.html">"src/app/demo.component"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_app_instrument_component_.html">"src/app/instrument.component"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_environments_environment_.html">"src/environments/environment"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_environments_environment_prod_.html">"src/environments/environment.prod"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_lib_supertablestate_.html">"src/lib/<wbr>Super<wbr>Table<wbr>State"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_lib_builtinsortfunctions_.html">"src/lib/builtin<wbr>Sort<wbr>Functions"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_lib_dummyrows_component_.html">"src/lib/dummy<wbr>Rows.component"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_lib_enumfilter_component_.html">"src/lib/enum<wbr>Filter.component"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_lib_index_.html">"src/lib/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_lib_interfaces_.html">"src/lib/interfaces"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_lib_supertable_component_.html">"src/lib/super<wbr>Table.component"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_lib_supertable_module_.html">"src/lib/super<wbr>Table.module"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_lib_supertablebody_component_.html">"src/lib/super<wbr>Table<wbr>Body.component"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_lib_supertablecell_component_.html">"src/lib/super<wbr>Table<wbr>Cell.component"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_lib_supertablefilters_.html">"src/lib/super<wbr>Table<wbr>Filters"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_lib_supertablehead_component_.html">"src/lib/super<wbr>Table<wbr>Head.component"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_lib_supertablerow_component_.html">"src/lib/super<wbr>Table<wbr>Row.component"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_lib_supertablesorters_.html">"src/lib/super<wbr>Table<wbr>Sorters"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_lib_tablecell_component_.html">"src/lib/table<wbr>Cell.component"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_lib_tableheader_component_.html">"src/lib/table<wbr>Header.component"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_lib_textfilter_component_.html">"src/lib/text<wbr>Filter.component"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_main_.html">"src/main"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_polyfills_.html">"src/polyfills"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_test_.html">"src/test"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
