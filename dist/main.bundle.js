@@ -1,15 +1,15 @@
-webpackJsonp([1,4],{
+webpackJsonp([0,4],{
 
-/***/ 176:
+/***/ 155:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__superTable_module__ = __webpack_require__(411);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__superTable_module__ = __webpack_require__(364);
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_0__superTable_module__, "SuperTableModule")) __webpack_require__.d(__webpack_exports__, "SuperTableModule", function() { return __WEBPACK_IMPORTED_MODULE_0__superTable_module__["SuperTableModule"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_0__superTable_module__, "SuperTableCell")) __webpack_require__.d(__webpack_exports__, "SuperTableCell", function() { return __WEBPACK_IMPORTED_MODULE_0__superTable_module__["SuperTableCell"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_0__superTable_module__, "superTableSorters")) __webpack_require__.d(__webpack_exports__, "superTableSorters", function() { return __WEBPACK_IMPORTED_MODULE_0__superTable_module__["superTableSorters"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_0__superTable_module__, "superTableFilters")) __webpack_require__.d(__webpack_exports__, "superTableFilters", function() { return __WEBPACK_IMPORTED_MODULE_0__superTable_module__["superTableFilters"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__superTable_component__ = __webpack_require__(278);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__superTable_component__ = __webpack_require__(241);
 /* unused harmony namespace reexport */
 
 // all components that will be codegen'd need to be exported for AOT to work
@@ -18,12 +18,12 @@ webpackJsonp([1,4],{
 
 /***/ }),
 
-/***/ 277:
+/***/ 240:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib__ = __webpack_require__(155);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InstrumentComponent; });
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -56,14 +56,14 @@ InstrumentComponent = __decorate([
 
 /***/ }),
 
-/***/ 278:
+/***/ 241:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__interfaces__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__interfaces__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__interfaces___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__interfaces__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__SuperTableState__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__SuperTableState__ = __webpack_require__(36);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SuperTable; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -183,12 +183,12 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 279:
+/***/ 242:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__interfaces__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__interfaces__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__interfaces___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__interfaces__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SuperTableCell; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -234,7 +234,7 @@ var _a;
 
 /***/ }),
 
-/***/ 297:
+/***/ 250:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -243,20 +243,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 297;
+webpackEmptyContext.id = 250;
 
 
 /***/ }),
 
-/***/ 298:
+/***/ 251:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(385);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(406);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(408);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(338);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(359);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(361);
 
 
 
@@ -269,14 +269,14 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 36:
+/***/ 29:
 /***/ (function(module, exports) {
 
 //# sourceMappingURL=interfaces.js.map
 
 /***/ }),
 
-/***/ 405:
+/***/ 358:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -297,7 +297,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Component */])({
         selector: 'app-root',
-        template: __webpack_require__(475)
+        template: __webpack_require__(375)
     })
 ], AppComponent);
 
@@ -305,18 +305,18 @@ AppComponent = __decorate([
 
 /***/ }),
 
-/***/ 406:
+/***/ 359:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(147);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(253);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(381);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lib__ = __webpack_require__(176);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(405);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__demo_component__ = __webpack_require__(407);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__instrument_component__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(334);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lib__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(358);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__demo_component__ = __webpack_require__(360);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__instrument_component__ = __webpack_require__(240);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -360,13 +360,101 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 407:
+/***/ 36:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib__ = __webpack_require__(176);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__instrument_component__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__ = __webpack_require__(377);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SuperTableState; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var sortCycle = ['ASC', 'DESC', null];
+var getNextSortOrder = function (currentSortOrder) {
+    var nextIndex = (sortCycle.indexOf(currentSortOrder) + 1) % sortCycle.length;
+    return sortCycle[nextIndex];
+};
+var SuperTableState = (function () {
+    function SuperTableState() {
+        // publicly exposed properties
+        this.hasAnyFilters = false;
+        this.sortStack = [];
+        // source of observable
+        this.stateChangedSource = new __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__["BehaviorSubject"](this);
+        this.stateChanged$ = this.stateChangedSource.asObservable();
+    }
+    SuperTableState.prototype.setColumns = function (columns) {
+        var _this = this;
+        this.columns = columns.map(function (c) {
+            if (!!c.filter) {
+                _this.hasAnyFilters = true;
+            }
+            return {
+                id: c.id,
+                filterValue: null,
+                sortOrder: null,
+                isHidden: false,
+                width: c.width || null,
+                def: c,
+                hasSort: !!c.sort,
+                hasFilter: !!c.filter
+            };
+        });
+    };
+    SuperTableState.prototype.toggleSort = function (colState, doNotClear) {
+        // Set next sort order
+        colState.sortOrder = getNextSortOrder(colState.sortOrder);
+        // Check if we are clearing the rest of the sort stack or not
+        if (doNotClear) {
+            var curIndex = this.sortStack.indexOf(colState);
+            if (curIndex === -1) {
+                this.sortStack.push(colState);
+            }
+            else if (!colState.sortOrder) {
+                this.sortStack.splice(curIndex, 1);
+            }
+        }
+        else {
+            this.sortStack = colState.sortOrder ? [colState] : [];
+            this.columns.forEach(function (column) {
+                if (column !== colState) {
+                    column.sortOrder = null;
+                }
+            });
+        }
+        this.notify();
+    };
+    SuperTableState.prototype.notify = function () {
+        this.stateChangedSource.next(this);
+    };
+    return SuperTableState;
+}());
+SuperTableState = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* Injectable */])(),
+    __metadata("design:paramtypes", [])
+], SuperTableState);
+
+//# sourceMappingURL=SuperTableState.js.map
+
+/***/ }),
+
+/***/ 360:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__instrument_component__ = __webpack_require__(240);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DemoComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -491,7 +579,7 @@ DemoComponent = __decorate([
 
 /***/ }),
 
-/***/ 408:
+/***/ 361:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -508,7 +596,7 @@ var environment = {
 
 /***/ }),
 
-/***/ 409:
+/***/ 362:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -565,15 +653,15 @@ DummyRows = __decorate([
 
 /***/ }),
 
-/***/ 410:
+/***/ 363:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__interfaces__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__interfaces__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__interfaces___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__interfaces__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__SuperTableState__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__SuperTableState__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_lodash__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return EnumFilterDropdown; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EnumFilter; });
@@ -626,7 +714,7 @@ __decorate([
 EnumFilterDropdown = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Component */])({
         selector: 'super-table-enum-filter-dropdown',
-        template: "\n    <div class=\"clear-filter\">\n      <button class=\"clear-filter-btn\" role=\"button\" (click)=\"showAll()\">show all</button>\n    </div>\n    <div *ngFor=\"let choice of column.def.filterChoices\">\n      <input type=\"checkbox\" [(ngModel)]=\"column.filterValue[choice]\" (ngModelChange)=\"onChoiceChange($event)\" />\n      {{ choice }}\n    </div>\n    <button role=\"button\" class=\"close-dropdown\" (click)=\"destroyMe()\">&times;</button>\n  ",
+        template: "\n    <div class=\"clear-filter\">\n      <button class=\"btn btn-secondary clear-filter-btn\" role=\"button\" (click)=\"showAll()\">show all</button>\n    </div>\n    <div *ngFor=\"let choice of column.def.filterChoices\">\n      <input type=\"checkbox\" [(ngModel)]=\"column.filterValue[choice]\" (ngModelChange)=\"onChoiceChange($event)\" />\n      {{ choice }}\n    </div>\n    <button role=\"button\" class=\"close-dropdown\" (click)=\"destroyMe()\">&times;</button>\n  ",
         styles: ["\n    :host {\n      position: absolute;\n      background: white;\n      padding: 5px 10px;\n      border: 1px solid #ddd;\n      box-shadow: 0 1px 10px -1px rgba(0,0,0,0.2);\n    }\n    .clear-filter {\n      border-bottom: 1px solid #DDD;\n      padding: 5px 0;\n    }\n    .close-dropdown {\n      position: absolute;\n      top: 5px;\n      right: 10px;\n      border: none;\n      background: transparent;\n      color: #CCC;\n      display: block;\n      width: 20px;\n      height: 20px;\n      line-height: 20px;\n    }\n    .close-dropdown:hover {\n      color: #AAA;\n    }\n  "]
     }),
     __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__SuperTableState__["a" /* SuperTableState */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__SuperTableState__["a" /* SuperTableState */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* ElementRef */]) === "function" && _c || Object])
@@ -703,31 +791,31 @@ var _a, _b, _c, _d, _e, _f, _g, _h, _j;
 
 /***/ }),
 
-/***/ 411:
+/***/ 364:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(253);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__superTable_component__ = __webpack_require__(278);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__superTableHead_component__ = __webpack_require__(414);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__superTableBody_component__ = __webpack_require__(412);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__superTableRow_component__ = __webpack_require__(415);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__dummyRows_component__ = __webpack_require__(409);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__tableHeader_component__ = __webpack_require__(418);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__interfaces__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__superTable_component__ = __webpack_require__(241);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__superTableHead_component__ = __webpack_require__(367);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__superTableBody_component__ = __webpack_require__(365);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__superTableRow_component__ = __webpack_require__(368);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__dummyRows_component__ = __webpack_require__(362);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__tableHeader_component__ = __webpack_require__(371);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__interfaces__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__interfaces___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__interfaces__);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__superTableSorters__ = __webpack_require__(416);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__superTableSorters__ = __webpack_require__(369);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "superTableSorters", function() { return __WEBPACK_IMPORTED_MODULE_10__superTableSorters__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__superTableFilters__ = __webpack_require__(413);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__superTableFilters__ = __webpack_require__(366);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "superTableFilters", function() { return __WEBPACK_IMPORTED_MODULE_11__superTableFilters__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__superTableCell_component__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__superTableCell_component__ = __webpack_require__(242);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "SuperTableCell", function() { return __WEBPACK_IMPORTED_MODULE_12__superTableCell_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__tableCell_component__ = __webpack_require__(417);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__textFilter_component__ = __webpack_require__(419);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__enumFilter_component__ = __webpack_require__(410);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__tableCell_component__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__textFilter_component__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__enumFilter_component__ = __webpack_require__(363);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SuperTableModule", function() { return SuperTableModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -786,15 +874,15 @@ SuperTableModule = __decorate([
 
 /***/ }),
 
-/***/ 412:
+/***/ 365:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__SuperTableState__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__interfaces__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__SuperTableState__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__interfaces__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__interfaces___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__interfaces__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_lodash__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SuperTableBody; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -904,7 +992,7 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 413:
+/***/ 366:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1084,12 +1172,12 @@ var superTableFilters = {
 
 /***/ }),
 
-/***/ 414:
+/***/ 367:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__SuperTableState__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__SuperTableState__ = __webpack_require__(36);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SuperTableHead; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1126,12 +1214,12 @@ var _a;
 
 /***/ }),
 
-/***/ 415:
+/***/ 368:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__SuperTableState__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__SuperTableState__ = __webpack_require__(36);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SuperTableRow; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1167,7 +1255,7 @@ var _a;
 
 /***/ }),
 
-/***/ 416:
+/***/ 369:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1184,12 +1272,12 @@ var superTableSorters = {
 
 /***/ }),
 
-/***/ 417:
+/***/ 370:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__interfaces__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__interfaces__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__interfaces___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__interfaces__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TableCell; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1266,14 +1354,14 @@ var _a, _b, _c, _d;
 
 /***/ }),
 
-/***/ 418:
+/***/ 371:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__interfaces__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__interfaces__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__interfaces___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__interfaces__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__SuperTableState__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__SuperTableState__ = __webpack_require__(36);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Resizer; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TableHeader; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1392,16 +1480,16 @@ var Resizer_1, _a, _b, _c, _d, _e;
 
 /***/ }),
 
-/***/ 419:
+/***/ 372:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__interfaces__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__interfaces__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__interfaces___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__interfaces__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_lodash__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_lodash__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_lodash__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__SuperTableState__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__SuperTableState__ = __webpack_require__(36);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextFilter; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1451,108 +1539,20 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 45:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__ = __webpack_require__(476);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SuperTableState; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var sortCycle = ['ASC', 'DESC', null];
-var getNextSortOrder = function (currentSortOrder) {
-    var nextIndex = (sortCycle.indexOf(currentSortOrder) + 1) % sortCycle.length;
-    return sortCycle[nextIndex];
-};
-var SuperTableState = (function () {
-    function SuperTableState() {
-        // publicly exposed properties
-        this.hasAnyFilters = false;
-        this.sortStack = [];
-        // source of observable
-        this.stateChangedSource = new __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__["BehaviorSubject"](this);
-        this.stateChanged$ = this.stateChangedSource.asObservable();
-    }
-    SuperTableState.prototype.setColumns = function (columns) {
-        var _this = this;
-        this.columns = columns.map(function (c) {
-            if (!!c.filter) {
-                _this.hasAnyFilters = true;
-            }
-            return {
-                id: c.id,
-                filterValue: null,
-                sortOrder: null,
-                isHidden: false,
-                width: c.width || null,
-                def: c,
-                hasSort: !!c.sort,
-                hasFilter: !!c.filter
-            };
-        });
-    };
-    SuperTableState.prototype.toggleSort = function (colState, doNotClear) {
-        // Set next sort order
-        colState.sortOrder = getNextSortOrder(colState.sortOrder);
-        // Check if we are clearing the rest of the sort stack or not
-        if (doNotClear) {
-            var curIndex = this.sortStack.indexOf(colState);
-            if (curIndex === -1) {
-                this.sortStack.push(colState);
-            }
-            else if (!colState.sortOrder) {
-                this.sortStack.splice(curIndex, 1);
-            }
-        }
-        else {
-            this.sortStack = colState.sortOrder ? [colState] : [];
-            this.columns.forEach(function (column) {
-                if (column !== colState) {
-                    column.sortOrder = null;
-                }
-            });
-        }
-        this.notify();
-    };
-    SuperTableState.prototype.notify = function () {
-        this.stateChangedSource.next(this);
-    };
-    return SuperTableState;
-}());
-SuperTableState = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* Injectable */])(),
-    __metadata("design:paramtypes", [])
-], SuperTableState);
-
-//# sourceMappingURL=SuperTableState.js.map
-
-/***/ }),
-
-/***/ 475:
+/***/ 375:
 /***/ (function(module, exports) {
 
 module.exports = "<a href=\"https://github.com/andyperlitch/ngx-super-table\" class=\"hidden-xs\">\n  <img\n    style=\"position: absolute; top: 0; right: 0; border: 0; z-index: 2000\"\n    src=\"https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67\"\n    alt=\"Fork me on GitHub\"\n    data-canonical-src=\"https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png\">\n</a>\n\n<nav class=\"navbar navbar-toggleable-md navbar-light bg-faded\">\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-controls=\"navbar\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <a class=\"navbar-brand\" href=\"#\">ngx super table</a>\n\n  <div class=\"collapse navbar-collapse\" id=\"navbar\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#demo\">Demo</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"https://github.com/andyperlitch/ngx-super-table#installation\">Installation</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"https://andyperlitch.github.io/ngx-super-table/docs/\">Documentation</a>\n      </li>\n    </ul>\n  </div>\n</nav>\n\n<div class=\"container-fluid\">\n  <app-demo-app></app-demo-app>\n</div>\n"
 
 /***/ }),
 
-/***/ 489:
+/***/ 390:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(298);
+module.exports = __webpack_require__(251);
 
 
 /***/ })
 
-},[489]);
+},[390]);
 //# sourceMappingURL=main.bundle.js.map
