@@ -98,7 +98,7 @@ var SuperTable = (function () {
     };
     SuperTable.prototype.ngOnChanges = function (changes) {
         // Inform state of columns changes
-        if (changes['columns'].isFirstChange()) {
+        if (changes['columns'] && changes['columns'].isFirstChange()) {
             this.state.setColumns(changes['columns'].currentValue);
         }
         this.sortAndFilterRows();
